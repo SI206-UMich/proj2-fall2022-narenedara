@@ -5,7 +5,7 @@ import os
 import csv
 import unittest
 
-#Worked with: Morgan Huseby , Isabella Smith
+#Worked with:  Morgan Huseby , Isabella Smith
 def get_listings_from_search_results(html_file):
     """
     Write a function that creates a BeautifulSoup object on html_file. Parse
@@ -104,6 +104,7 @@ def get_listing_information(listing_id):
         policy=policy
     b=soup.find('h2', class_ ="_14i3z6h")
     typetext=b.text
+    
     type="Entire Room"
     for word in typetext.split(" "):
         if "private"== word.lower():
